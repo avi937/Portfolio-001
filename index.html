@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avi Arora | DevOps & Cloud Infrastructure Engineer | RHCSA Certified</title>
+  <meta name="description" content="Portfolio of Avi Arora — DevOps Engineer specializing in AWS, Azure, Terraform, Docker, ECS Fargate, Cloudflare Zero Trust, and high-availability cloud infrastructure.">
+  <meta name="keywords" content="Avi Arora, DevOps Engineer, Cloud Engineer, AWS, Terraform, RHCSA, Docker, Kubernetes, CI/CD, GitHub Actions">
+  <meta name="author" content="Avi Arora">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Avi Arora | DevOps & Cloud Infrastructure Engineer">
+  <meta property="og:description" content="Production-proven DevOps Engineer specializing in AWS & Azure Multi-Cloud, Terraform IaC, ECS Fargate, and High Availability Architectures.">
+  <meta property="og:image" content="assets/img/profile.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Cyber Ambient Glow -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ====================================================
+       1. NAVIGATION BAR
+  ==================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">Avi.Arora</span><span class="logo-bracket"> /&gt;</span>
+        <span class="logo-badge">DevOps</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="assets/docs/AVI_ARORA_DEVOPS_RESUME.pdf" download="Avi_Arora_DevOps_Resume.pdf" class="btn btn-outline btn-sm">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills Matrix</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Featured Projects</a>
+        <a href="#certifications" class="mobile-nav-link">Certifications</a>
+        <a href="#contact" class="mobile-nav-link">Contact Me</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <a href="assets/docs/AVI_ARORA_DEVOPS_RESUME.pdf" download="Avi_Arora_DevOps_Resume.pdf" class="btn btn-primary btn-block">
+          Download Resume (PDF)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================
+       2. HERO SECTION
+  ==================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+
+        <!-- Status Pill -->
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span class="status-text">RHCSA Certified &bull; DevOps &amp; Cloud Infrastructure</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Avi Arora</span><br>
+          <span class="hero-subtitle-typewriter" id="typewriter"></span>
+          <span class="cursor">&nbsp;</span>
+        </h1>
+
+        <p class="hero-description">
+          DevOps Engineer with hands-on production experience managing cloud infrastructure across AWS and Azure, 
+          containerizing applications with Docker &amp; ECS Fargate, building CI/CD pipelines with GitHub Actions, 
+          and provisioning reproducible infrastructure as code with Terraform.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary btn-lg">
+            <span>Explore Projects</span>
+            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+          <a href="assets/docs/AVI_ARORA_DEVOPS_RESUME.pdf" download class="btn btn-glass btn-lg">
+            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download Resume</span>
+          </a>
+          <button class="btn btn-icon" id="copyEmailHero" title="Copy Email Address">
+            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+          </button>
+        </div>
+
+        <!-- Quick Tags -->
+        <div class="hero-tags">
+          <span class="tech-tag"><svg class="tag-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Terraform IaC</span>
+          <span class="tech-tag"><svg class="tag-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.8 8.4C18.4 4.8 15.3 2 11.5 2 8.7 2 6.3 3.5 5 5.8 2.2 6.4 0 8.9 0 12c0 3.3 2.7 6 6 6h12.5c2.5 0 4.5-2 4.5-4.5 0-2.3-1.8-4.2-4.2-4.5z"/></svg> AWS &amp; Azure</span>
+          <span class="tech-tag"><svg class="tag-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Docker &amp; ECS</span>
+          <span class="tech-tag"><svg class="tag-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Cloudflare ZTNA</span>
+          <span class="tech-tag"><svg class="tag-icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> Red Hat RHCSA</span>
+        </div>
+
+      </div>
+
+      <!-- Right Visual Card -->
+      <div class="hero-visual">
+        <div class="profile-card-wrapper">
+          <div class="profile-card-glow"></div>
+          <div class="profile-card">
+            <div class="profile-image-container">
+              <img src="assets/img/profile.png?v=2" alt="Avi Arora - DevOps Engineer" class="profile-image" id="profileImg" onerror="this.onerror=null; this.src='assets/img/profile.jpg';">
+              <div class="profile-badge-overlay">
+                <span class="pulse-ring"></span>
+                <span class="pulse-core"></span>
+              </div>
+            </div>
+
+            <div class="profile-info">
+              <h3 class="profile-name">Avi Arora</h3>
+              <p class="profile-role">SDE-1(DevOps)</p>
+              <p class="profile-location">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Sri Ganganagar, Rajasthan, India
+              </p>
+            </div>
+
+            <!-- Floating Mini Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon-wrap bg-red">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="badge-svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2zm0-10h2v8h-2z"/></svg>
+              </div>
+              <div class="badge-text">
+                <span class="badge-title">RHCSA</span>
+                <span class="badge-sub">Red Hat Certified</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon-wrap bg-blue">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="badge-svg"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+              </div>
+              <div class="badge-text">
+                <span class="badge-title">AWS &amp; Azure</span>
+                <span class="badge-sub">Multi-Cloud</span>
+              </div>
+            </div>
+
+            <div class="social-links-row">
+              <a href="https://linkedin.com/in/avi-arora-a68775232" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.32a1.6 1.6 0 1 0 1.6 1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg>
+              </a>
+              <a href="https://github.com/avi937" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+              <a href="mailto:aviarora6789@gmail.com" class="social-btn" title="Send Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+              <a href="tel:+918769952130" class="social-btn" title="Call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       3. METRICS / STATS RIBBON
+  ==================================================== -->
+  <section class="stats-ribbon">
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-value" data-target="3">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Live SaaS Platforms</div>
+        <div class="stat-detail">Chatreal.ai &bull; CelebsGPT &bull; ExciteMe</div>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-card">
+        <div class="stat-value" data-target="0">0</div>
+        <div class="stat-plus">s</div>
+        <div class="stat-label">User-Facing Downtime</div>
+        <div class="stat-detail">Azure &rarr; AWS ECS Fargate Migration</div>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-card">
+        <div class="stat-value" data-target="99">0</div>
+        <div class="stat-plus">.9%</div>
+        <div class="stat-label">Production SLA &amp; Uptime</div>
+        <div class="stat-detail">Continuous Monitoring &amp; Alerts</div>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-card">
+        <div class="stat-value" data-target="15">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Cloud &amp; DevOps Technologies</div>
+        <div class="stat-detail">AWS, Azure, Terraform, Docker &amp; Linux</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       4. HUMAN-READABLE OPERATIONS & ARCHITECTURE DASHBOARD
+  ==================================================== -->
+  <section class="ops-dashboard-section">
+    <div class="ops-container">
+      <div class="ops-window">
+        <!-- Dashboard Header -->
+        <div class="ops-bar">
+          <div class="window-controls">
+            <span class="control-btn close"></span>
+            <span class="control-btn minimize"></span>
+            <span class="control-btn maximize"></span>
+          </div>
+          <div class="ops-title">
+            <span class="ops-status-dot"></span>
+            Production Infrastructure &amp; Operational Highlights
+          </div>
+          <div class="ops-tabs">
+            <button class="ops-tab-btn active" data-tab="overview">Live Cloud Mesh</button>
+            <button class="ops-tab-btn" data-tab="asg">Auto Scaling &amp; ALB</button>
+            <button class="ops-tab-btn" data-tab="security">Zero-Trust Security</button>
+          </div>
+        </div>
+
+        <!-- Dashboard Content Body (Populated by script.js) -->
+        <div class="ops-body" id="opsOutput">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       5. ABOUT SECTION
+  ==================================================== -->
+  <section class="section about-section" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">About Me</span>
+        <h2 class="section-title">Automation, Reliability &amp; Clean Infrastructure</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p class="lead-text">
+            I am a DevOps Engineer based in India, currently working at <strong>4 Way Technologies</strong> 
+            where I manage cloud infrastructure across AWS and Azure for live SaaS applications.
+          </p>
+          <p>
+            My hands-on experience centers on provisioning AWS resources using <strong>Terraform</strong>, 
+            containerizing applications with <strong>Docker</strong>, deploying services to <strong>AWS ECS Fargate</strong>, 
+            configuring <strong>Application Load Balancers</strong>, and securing application endpoints with <strong>Cloudflare Access</strong>.
+          </p>
+          <p>
+            I am certified as a <strong>Red Hat Certified System Administrator (RHCSA)</strong>, giving me a solid foundation in Linux 
+            administration, storage management (LVM), service configuration, permissions, and command-line troubleshooting.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🛠️</div>
+              <div class="highlight-content">
+                <h4>Hands-On Cloud Operations</h4>
+                <p>Experience monitoring live environments, diagnosing deployment issues, and setting up automated alerts with CloudWatch and Slack.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🔒</div>
+              <div class="highlight-content">
+                <h4>Access Control &amp; Network Security</h4>
+                <p>Implementing least-privilege IAM roles, Cloudflare Access policies, and private subnet isolation behind load balancers.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">⚡</div>
+              <div class="highlight-content">
+                <h4>Infrastructure as Code</h4>
+                <p>Writing modular, reusable Terraform code with remote S3 state storage and DynamoDB locking for predictable deployments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-side-col">
+          <div class="info-card">
+            <h3 class="info-card-title">Quick Information</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-key">Location:</span>
+                <span class="info-val">Sri Ganganagar, Rajasthan, India</span>
+              </li>
+              <li>
+                <span class="info-key">Experience:</span>
+                <span class="info-val">SDE-1(DevOps) at 4 Way Technologies</span>
+              </li>
+              <li>
+                <span class="info-key">Education:</span>
+                <span class="info-val">B.Tech in Artificial Intelligence &amp; Data Science</span>
+              </li>
+              <li>
+                <span class="info-key">Primary Clouds:</span>
+                <span class="info-val">Amazon Web Services (AWS)</span>
+              </li>
+              <li>
+                <span class="info-key">Certification:</span>
+                <span class="info-val">Red Hat RHCSA (Certified System Administrator)</span>
+              </li>
+              <li>
+                <span class="info-key">Availability:</span>
+                <span class="info-val text-success">Full-Time / Relocation / Remote</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       6. SKILLS MATRIX
+  ==================================================== -->
+  <section class="section skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Technical Arsenal</span>
+        <h2 class="section-title">Battle-Tested Skills &amp; Tools</h2>
+        <p class="section-subtitle">Categorized technologies actively used in high-volume production environments.</p>
+        <div class="section-underline"></div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid">
+
+        <!-- Card 1: Cloud Providers -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap bg-blue">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+            </div>
+            <div>
+              <h3 class="category-title">Cloud Infrastructure</h3>
+              <p class="category-subtitle">Multi-Cloud AWS &amp; Azure</p>
+            </div>
+          </div>
+          <div class="skills-pills">
+            <span class="skill-pill highlight">AWS EC2 &amp; ASG</span>
+            <span class="skill-pill highlight">AWS ECS Fargate</span>
+            <span class="skill-pill highlight">VPC &amp; Networking</span>
+            <span class="skill-pill highlight">Application Load Balancer</span>
+            <span class="skill-pill">AWS RDS (Postgres/MySQL)</span>
+            <span class="skill-pill">AWS S3 &amp; Glacier</span>
+            <span class="skill-pill">AWS IAM (Least Privilege)</span>
+            <span class="skill-pill">AWS Route 53</span>
+            <span class="skill-pill">AWS Secrets Manager</span>
+            <span class="skill-pill">AWS SES &amp; SNS</span>
+            <span class="skill-pill">Azure App Services</span>
+            <span class="skill-pill">Azure Cognitive AI Services</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Infrastructure as Code -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap bg-purple">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h3 class="category-title">Infrastructure as Code (IaC)</h3>
+              <p class="category-subtitle">Declarative &amp; Automated</p>
+            </div>
+          </div>
+          <div class="skills-pills">
+            <span class="skill-pill highlight">Terraform (HCL)</span>
+            <span class="skill-pill highlight">Modular Architecture</span>
+            <span class="skill-pill highlight">S3 Remote State + Locking</span>
+            <span class="skill-pill">Ansible Automation</span>
+            <span class="skill-pill">Dynamic Data Lookups</span>
+            <span class="skill-pill">Cloud-Init / UserData</span>
+            <span class="skill-pill">Target Tracking Policies</span>
+            <span class="skill-pill">Terraform Cloud / CLI</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Containers & Orchestration -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap bg-cyan">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12l-10-6L2 12l10 6 10-6zm-10 8l-8-4.8v-2.4l8 4.8 8-4.8v2.4L12 20z"/></svg>
+            </div>
+            <div>
+              <h3 class="category-title">Containers &amp; Orchestration</h3>
+              <p class="category-subtitle">Microservices at Scale</p>
+            </div>
+          </div>
+          <div class="skills-pills">
+            <span class="skill-pill highlight">Docker &amp; Multi-Stage Builds</span>
+            <span class="skill-pill highlight">AWS ECS Fargate</span>
+            <span class="skill-pill highlight">Amazon ECR</span>
+            <span class="skill-pill">Kubernetes (K8s Exploratory)</span>
+            <span class="skill-pill">Container Security Auditing</span>
+            <span class="skill-pill">Health Checks &amp; Grace Periods</span>
+            <span class="skill-pill">Zero-Downtime Rolling Deploys</span>
+          </div>
+        </div>
+
+        <!-- Card 4: CI/CD & DevSecOps -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap bg-emerald">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="category-title">CI/CD &amp; DevSecOps</h3>
+              <p class="category-subtitle">Fast, Secure Delivery</p>
+            </div>
+          </div>
+          <div class="skills-pills">
+            <span class="skill-pill highlight">GitHub Actions</span>
+            <span class="skill-pill highlight">Automated Test &amp; Deploy</span>
+            <span class="skill-pill highlight">Dependency Vulnerability Scanning</span>
+            <span class="skill-pill">Git Version Control &amp; PR Workflows</span>
+            <span class="skill-pill">Secrets Management</span>
+            <span class="skill-pill">Automated Release Tagging</span>
+            <span class="skill-pill">Zero-Secret Git Safeguards</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Networking & Zero Trust -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap bg-orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <h3 class="category-title">Networking &amp; Security</h3>
+              <p class="category-subtitle">Defense-in-Depth</p>
+            </div>
+          </div>
+          <div class="skills-pills">
+            <span class="skill-pill highlight">Cloudflare Zero Trust (ZTNA)</span>
+            <span class="skill-pill highlight">Cloudflare Access &amp; WAF</span>
+            <span class="skill-pill highlight">Public / Private Multi-AZ Subnets</span>
+            <span class="skill-pill">NAT Gateways &amp; Elastic IPs</span>
+            <span class="skill-pill">Security Groups ("Velvet Rope")</span>
+            <span class="skill-pill">Route Tables &amp; Internet Gateways</span>
+            <span class="skill-pill">SSL / TLS Termination</span>
+            <span class="skill-pill">DNS &amp; Domain Migrations</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Linux & Observability -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap bg-red">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </div>
+            <div>
+              <h3 class="category-title">Linux &amp; Observability</h3>
+              <p class="category-subtitle">RHCSA &amp; Incident Readiness</p>
+            </div>
+          </div>
+          <div class="skills-pills">
+            <span class="skill-pill highlight">Red Hat Enterprise Linux (RHEL)</span>
+            <span class="skill-pill highlight">Ubuntu Server 24.04</span>
+            <span class="skill-pill highlight">Bash &amp; Shell Scripting</span>
+            <span class="skill-pill">Amazon CloudWatch (Metrics &amp; Alarms)</span>
+            <span class="skill-pill">Axiom &amp; Fluentd Log Pipelines</span>
+            <span class="skill-pill">Slack Webhook Alerts</span>
+            <span class="skill-pill">Systemd, Storage LVM, Perms</span>
+            <span class="skill-pill">P0 Incident Root Cause Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       7. WORK EXPERIENCE
+  ==================================================== -->
+  <section class="section experience-section" id="experience">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Career Path</span>
+        <h2 class="section-title">Production Experience</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Job 1: 4 Way Technologies (Current) -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-tag current">Present Role</span>
+                <h3 class="job-title">SDE-1(DevOps)</h3>
+                <h4 class="company-name">4 Way Technologies &bull; New Delhi, India</h4>
+                <p class="project-scope">Supporting Aisun Organization: <strong>Chatreal.ai</strong>, <strong>CelebsGPT.com</strong>, <strong>ExciteMe.ai</strong></p>
+              </div>
+              <div class="job-period">August 2025 – Present</div>
+            </div>
+
+            <div class="job-body">
+              <ul class="job-achievements">
+                <li>
+                  <strong>Multi-Cloud Infrastructure Management:</strong> Oversee production AWS (EC2, ECS Fargate, RDS) and Azure infrastructure across three high-traffic SaaS products serving thousands of daily active users.
+                </li>
+                <li>
+                  <strong>Zero-Downtime Backend Migration:</strong> Planned and executed a full migration of backend and authentication services from Azure to AWS ECS Fargate using Terraform — provisioning VPC, ALB, ECR repos, task definitions, CloudWatch alarms, and Secrets Manager. Cutover traffic via ALB listener rules with <strong>0s user-facing downtime</strong>.
+                </li>
+                <li>
+                  <strong>Zero Trust Network Access (ZTNA):</strong> Implemented Cloudflare Access across all application auth endpoints, enforcing identity-based controls and eliminating direct public exposure of backend servers.
+                </li>
+                <li>
+                  <strong>CI/CD &amp; DevSecOps Pipeline:</strong> Built GitHub Actions deployment workflows with Terraform, introducing automated dependency vulnerability auditing and static code security checks.
+                </li>
+                <li>
+                  <strong>Production Observability:</strong> Configured comprehensive CloudWatch CPU/Memory alarms, Slack instant notifications, and unified log aggregation via Axiom and Fluentd.
+                </li>
+                <li>
+                  <strong>P0 Incident &amp; Email Deliverability Rescue:</strong> Diagnosed and resolved critical P0 incidents including failed deployments and an 8% bounce-rate SES delivery crisis by separating transactional/marketing pipelines, restoring 100% login OTP delivery.
+                </li>
+                <li>
+                  <strong>DNS &amp; CDN Migration:</strong> Successfully migrated frontend hosting and DNS from AWS Route 53 to Cloudflare across multiple domains, including SSL certificates and automated redirect rules.
+                </li>
+              </ul>
+
+              <div class="job-tech-stack">
+                <span class="pill-sm">AWS ECS Fargate</span>
+                <span class="pill-sm">Terraform</span>
+                <span class="pill-sm">Docker</span>
+                <span class="pill-sm">Cloudflare ZTNA</span>
+                <span class="pill-sm">GitHub Actions</span>
+                <span class="pill-sm">CloudWatch</span>
+                <span class="pill-sm">AWS SES</span>
+                <span class="pill-sm">Axiom / Fluentd</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2: CodeSpazio Solutions -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-tag">Internship</span>
+                <h3 class="job-title">DevOps Trainee</h3>
+                <h4 class="company-name">CodeSpazio Solutions Pvt. Ltd. &bull; Jaipur, India</h4>
+              </div>
+              <div class="job-period">May 2025 – August 2025</div>
+            </div>
+
+            <div class="job-body">
+              <ul class="job-achievements">
+                <li>
+                  <strong>Infrastructure as Code:</strong> Built and tested modular Terraform configurations to provision and maintain AWS EC2, Security Groups, and VPC networking.
+                </li>
+                <li>
+                  <strong>Containerization &amp; Deployment:</strong> Automated application deployment pipelines and containerized environments using Docker, Ansible, and Terraform.
+                </li>
+                <li>
+                  <strong>Load Balancing &amp; High Availability:</strong> Configured and tested Application Load Balancers with target groups and health probes to distribute traffic evenly across web workloads.
+                </li>
+              </ul>
+
+              <div class="job-tech-stack">
+                <span class="pill-sm">AWS</span>
+                <span class="pill-sm">Terraform</span>
+                <span class="pill-sm">Docker</span>
+                <span class="pill-sm">Ansible</span>
+                <span class="pill-sm">ALB</span>
+                <span class="pill-sm">Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3: Celebal Technologies -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-tag">Internship</span>
+                <h3 class="job-title">Cloud &amp; DevOps Intern</h3>
+                <h4 class="company-name">Celebal Technologies &bull; Remote, India</h4>
+              </div>
+              <div class="job-period">June 2024 – August 2024</div>
+            </div>
+
+            <div class="job-body">
+              <ul class="job-achievements">
+                <li>
+                  <strong>Cloud Fundamentals in Practice:</strong> Gained hands-on exposure to AWS and Azure cloud platforms, exploring core services including virtual machines, storage, and networking as part of structured cloud training.
+                </li>
+                <li>
+                  <strong>Linux Administration:</strong> Worked extensively with Linux environments for server configuration, user management, and shell scripting — laying the foundation for RHCSA certification pursuits.
+                </li>
+                <li>
+                  <strong>DevOps Tooling Exposure:</strong> Explored industry DevOps toolchains including Docker containerization basics, Git version control workflows, and CI/CD pipeline concepts.
+                </li>
+              </ul>
+
+              <div class="job-tech-stack">
+                <span class="pill-sm">AWS</span>
+                <span class="pill-sm">Azure</span>
+                <span class="pill-sm">Linux</span>
+                <span class="pill-sm">Docker</span>
+                <span class="pill-sm">Git</span>
+                <span class="pill-sm">Shell Scripting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       8. FEATURED PROJECTS
+  ==================================================== -->
+  <section class="section projects-section" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Architecture Portfolio</span>
+        <h2 class="section-title">Featured Engineering Projects</h2>
+        <p class="section-subtitle">Real-world Infrastructure as Code and production cloud implementations.</p>
+        <div class="section-underline"></div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: High Availability ASG + ALB -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-badge bg-gradient-cyan">AWS High Availability</div>
+            <div class="project-links">
+              <a href="https://github.com/avi937/Terraform-code-AWS/tree/main/project-3" target="_blank" rel="noopener noreferrer" class="proj-link-icon" title="View Source on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Multi-AZ High Availability &amp; Auto Scaling Infrastructure</h3>
+          <p class="project-desc">
+            Production-ready elastic infrastructure featuring an internet-facing Application Load Balancer (ALB), 
+            Target Group with active HTTP health probes, and an Auto Scaling Group spanning Mumbai availability zones.
+          </p>
+          <ul class="project-bullets">
+            <li><strong>Dynamic Scaling:</strong> Configured Target Tracking Scaling policy based on <code>ALBRequestCountPerTarget</code> (20 req/min/target).</li>
+            <li><strong>Self-Healing:</strong> Configured <code>ELB</code> health checks with automated instance termination and replacement upon failure.</li>
+            <li><strong>"Velvet Rope" Security:</strong> EC2 Security Group strictly rejects direct public traffic and only allows HTTP from the ALB security group.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Terraform</span>
+            <span>AWS ALB</span>
+            <span>Auto Scaling Group</span>
+            <span>CloudWatch Alarms</span>
+            <span>Ubuntu 24.04</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Custom Multi-AZ VPC -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-badge bg-gradient-purple">Cloud Networking</div>
+            <div class="project-links">
+              <a href="https://github.com/avi937/Terraform-code-AWS/tree/main/project-2" target="_blank" rel="noopener noreferrer" class="proj-link-icon" title="View Source on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Production Custom Multi-AZ VPC Architecture</h3>
+          <p class="project-desc">
+            A secure, multi-tier Amazon Virtual Private Cloud (10.0.0.0/16) in Mumbai (ap-south-1) with 2 Public subnets and 2 isolated Private subnets across multiple AZs.
+          </p>
+          <ul class="project-bullets">
+            <li><strong>NAT Gateway &amp; EIP:</strong> Allows private app workloads to securely pull updates without public ingress exposure.</li>
+            <li><strong>Isolated Route Tables:</strong> Distinct route tables for public ingress (IGW) and private egress (NAT).</li>
+            <li><strong>Verified Connectivity:</strong> Validated through live packet routing tests and Bastion host validation.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Terraform</span>
+            <span>AWS VPC</span>
+            <span>NAT Gateway</span>
+            <span>Internet Gateway</span>
+            <span>Route Tables</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Azure to AWS ECS Fargate Migration -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-badge bg-gradient-emerald">Production Migration</div>
+            <div class="project-links">
+              <span class="proj-private-badge">Production Work</span>
+            </div>
+          </div>
+          <h3 class="project-title">Zero-Downtime Azure to AWS ECS Fargate Migration</h3>
+          <p class="project-desc">
+            Full infrastructure and backend migration for Chatreal.ai &amp; CelebsGPT from Azure App Services to AWS ECS Fargate using Terraform.
+          </p>
+          <ul class="project-bullets">
+            <li><strong>End-to-End Terraform:</strong> Provisioned VPC, ALB, ECR repos, ECS task definitions, and Secrets Manager.</li>
+            <li><strong>Traffic Cutover:</strong> Executed live DNS switch and weighted ALB listener routing with <strong>0% downtime</strong>.</li>
+            <li><strong>Cost &amp; Performance:</strong> Reduced infrastructure overhead and consolidated monitoring into CloudWatch &amp; Axiom.</li>
+          </ul>
+          <div class="project-tech">
+            <span>AWS ECS Fargate</span>
+            <span>Docker</span>
+            <span>Terraform</span>
+            <span>Cloudflare Access</span>
+            <span>Secrets Manager</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Automated EC2 Web Server -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-badge bg-gradient-orange">Automation &amp; IaC</div>
+            <div class="project-links">
+              <a href="https://github.com/avi937/Terraform-code-AWS/tree/main/project-1" target="_blank" rel="noopener noreferrer" class="proj-link-icon" title="View Source on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Automated EC2 Web Server with Zero-Touch Bootstrap</h3>
+          <p class="project-desc">
+            Automated provisioning of Ubuntu 24.04 servers with dynamic AMI data filters, TLS key generation, custom security groups, and cloud-init Nginx bootstrapping.
+          </p>
+          <ul class="project-bullets">
+            <li><strong>Dynamic AMI Lookup:</strong> Discovers latest Canonical official Ubuntu 24.04 AMI dynamically.</li>
+            <li><strong>Automated Key Generation:</strong> Generates 4096-bit RSA keys and saves local <code>.pem</code> files with strict permissions.</li>
+            <li><strong>Zero-Touch UserData:</strong> Installs and starts Nginx displaying server metadata (IP &amp; AZ) immediately upon boot.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Terraform</span>
+            <span>AWS EC2</span>
+            <span>TLS Key Pair</span>
+            <span>Nginx</span>
+            <span>UserData / Bash</span>
+          </div>
+        </div>
+
+        <!-- Project 5: Enterprise 3-Tier Web App -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-badge bg-gradient-blue">Enterprise Architecture</div>
+            <div class="project-links">
+              <span class="proj-private-badge">Architecture Blueprint</span>
+            </div>
+          </div>
+          <h3 class="project-title">Enterprise 3-Tier Web Application Infrastructure</h3>
+          <p class="project-desc">
+            Production blueprint segregating workloads into Presentation Tier (Public ALB), Logic Tier (Private EC2 ASG), and Database Tier (Multi-AZ RDS).
+          </p>
+          <ul class="project-bullets">
+            <li><strong>Strict Tier Isolation:</strong> Presentation tier talks only to app tier; app tier talks only to database tier via security group chaining.</li>
+            <li><strong>High Availability RDS:</strong> Automated synchronous failover standby across multiple Availability Zones.</li>
+            <li><strong>Secrets Integration:</strong> Master credentials provisioned via AWS Secrets Manager with zero hardcoded passwords.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Terraform</span>
+            <span>AWS ALB</span>
+            <span>EC2 App Tier</span>
+            <span>AWS RDS Multi-AZ</span>
+            <span>AWS Secrets Manager</span>
+          </div>
+        </div>
+
+        <!-- Project 6: SES & Email Infrastructure -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-badge bg-gradient-red">Deliverability &amp; Security</div>
+            <div class="project-links">
+              <span class="proj-private-badge">Production Work</span>
+            </div>
+          </div>
+          <h3 class="project-title">Production Email Infrastructure &amp; Deliverability Hardening</h3>
+          <p class="project-desc">
+            Architected and stabilized transactional and marketing email infrastructure across multiple brand domains using AWS SES, Sendy, and Google SMTP.
+          </p>
+          <ul class="project-bullets">
+            <li><strong>Bounce-Rate Mitigation:</strong> Implemented SNS bounce/complaint handling to auto-suppress bad emails, keeping bounce rate strictly &lt; 2%.</li>
+            <li><strong>Subdomain Separation:</strong> Isolated critical auth OTP emails from bulk marketing blasts to preserve reputation.</li>
+            <li><strong>Full Authentication:</strong> Enforced SPF, DKIM, and strict DMARC alignment, eliminating blacklist incidents.</li>
+          </ul>
+          <div class="project-tech">
+            <span>AWS SES</span>
+            <span>Amazon SNS</span>
+            <span>CloudWatch</span>
+            <span>DNS / DKIM / DMARC</span>
+            <span>Dedicated IP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       9. CERTIFICATIONS & ACCREDITATIONS
+  ==================================================== -->
+  <section class="section cert-section" id="certifications">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-kicker">Credentials</span>
+        <h2 class="section-title">Certifications &amp; Accreditations</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- RHCSA -->
+        <div class="cert-card featured-cert">
+          <div class="cert-icon-wrapper">
+            <div class="cert-icon bg-red">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+            </div>
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge-tag">Globally Recognized Credential</div>
+            <h3 class="cert-title">Red Hat Certified System Administrator (RHCSA)</h3>
+            <h4 class="cert-issuer">Red Hat &bull; Enterprise Linux</h4>
+            <p class="cert-desc">
+              Rigorous, hands-on practical exam verifying expertise in managing Linux systems: storage management (LVM), 
+              systemd services, file permissions and ACLs, user &amp; group security, network configuration, and system debugging.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-status verified">&bull; Certified &amp; Active</span>
+              <span class="cert-focus">Linux Kernel, Storage, Security &amp; Networking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AWS Forage -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <div class="cert-icon bg-blue">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+            </div>
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge-tag">Architectural Simulation</div>
+            <h3 class="cert-title">AWS Solutions Architecture Job Simulation</h3>
+            <h4 class="cert-issuer">Amazon Web Services &bull; Forage</h4>
+            <p class="cert-desc">
+              Completed real-world simulations designing resilient AWS architectures, evaluating multi-region disaster recovery strategies, 
+              cost optimization models, and IAM security best practices.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-status verified">&bull; Completed</span>
+              <span class="cert-focus">Multi-Region, Disaster Recovery &amp; Sizing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- B.Tech Degree -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <div class="cert-icon bg-purple">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+            </div>
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge-tag">Academic Foundation</div>
+            <h3 class="cert-title">Bachelor of Technology (B.Tech)</h3>
+            <h4 class="cert-issuer">Arya College of Engineering and IT &bull; Jaipur</h4>
+            <p class="cert-desc">
+              Specialized in <strong>Artificial Intelligence &amp; Data Science</strong> (October 2021 – May 2025). 
+              Built strong analytical foundation in operating systems, distributed computing, database systems, and networking algorithms.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-status verified">&bull; Graduated (2021–2025)</span>
+              <span class="cert-focus">AI &amp; Data Science, Operating Systems</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       10. CONTACT / LET'S CONNECT
+  ==================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="section-container">
+      <div class="contact-box">
+        <div class="contact-grid">
+
+          <div class="contact-info-col">
+            <span class="section-kicker">Get in Touch</span>
+            <h2 class="contact-headline">Let's Build Something Resilient Together.</h2>
+            <p class="contact-desc">
+              Whether you need to scale cloud infrastructure, migrate to zero-downtime containers, 
+              automate your CI/CD pipelines, or discuss a high-impact DevOps role — my inbox is always open.
+            </p>
+
+            <div class="contact-items-list">
+              <a href="mailto:aviarora6789@gmail.com" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Email Me</span>
+                  <span class="contact-item-value">aviarora6789@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+918769952130" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Call / WhatsApp</span>
+                  <span class="contact-item-value">+91-8769952130</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/avi-arora-a68775232" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.32a1.6 1.6 0 1 0 1.6 1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">LinkedIn</span>
+                  <span class="contact-item-value">linkedin.com/in/avi-arora-a68775232</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/avi937" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">GitHub</span>
+                  <span class="contact-item-value">github.com/avi937</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Action Card -->
+          <div class="contact-card-col">
+            <div class="direct-message-box">
+              <h3 class="form-title">Send a Quick Message</h3>
+              <p class="form-sub">Sends directly to my inbox via your preferred mail client.</p>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="senderName">Your Name</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Sarah Connor" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail">Your Email</label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="e.g. sarah@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject">Subject</label>
+                  <input type="text" id="senderSubject" class="form-input" placeholder="e.g. DevOps Role / Infrastructure Project" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage">Message</label>
+                  <textarea id="senderMessage" class="form-input form-textarea" rows="4" placeholder="Hello Avi, I came across your portfolio..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg">
+                  <span>Send Direct Email</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       11. FOOTER
+  ==================================================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span><span class="logo-name">Avi.Arora</span><span class="logo-bracket"> /&gt;</span>
+        </a>
+        <p class="footer-tagline">Architecting resilient, self-healing cloud platforms.</p>
+      </div>
+
+      <div class="footer-center">
+        <span class="footer-built">
+          &copy; 2025 Avi Arora &bull; All Rights Reserved
+        </span>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" id="backToTop" title="Scroll to top">
+          <span>Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
