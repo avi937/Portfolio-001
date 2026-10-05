@@ -5,14 +5,40 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ── 0. THEME SWITCHER (Desktop button + Mobile drawer button) ──
+  const themeToggle = document.getElementById('themeToggle');
+  const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+
+  let storedTheme = 'light';
+  try {
+    storedTheme = localStorage.getItem('avi_portfolio_theme') || 'light';
+  } catch (e) {
+    console.warn("localStorage not available");
+  }
+  document.documentElement.setAttribute('data-theme', storedTheme);
+
+  function toggleThemeMode() {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', nextTheme);
+    try {
+      localStorage.setItem('avi_portfolio_theme', nextTheme);
+    } catch (e) {
+      console.warn("localStorage not available");
+    }
+  }
+
+  if (themeToggle) themeToggle.addEventListener('click', toggleThemeMode);
+  if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleThemeMode);
+
   // ── 1. DYNAMIC TYPEWRITER EFFECT ──
   const typewriterElement = document.getElementById('typewriter');
   const phrases = [
-    'DevOps Engineer (AWS & Azure)',
-    'Infrastructure as Code with Terraform',
-    'Linux System Administration (RHCSA)',
-    'Container Workflows (Docker & ECS)',
-    'CI/CD Pipelines with GitHub Actions'
+    'DevOps Engineer',
+    'AWS Cloud Engineer',
+    'Terraform Specialist',
+    'RHCSA Certified Admin',
+    'CI/CD & Docker Specialist'
   ];
 
   let phraseIndex = 0;
@@ -239,6 +265,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileDrawer = document.getElementById('mobileDrawer');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
+  function closeDrawer() {
+    if (mobileDrawer) mobileDrawer.classList.remove('open');
+    if (menuToggle) {
+      menuToggle.classList.remove('active');
+      // Force all bars back to resting state
+      menuToggle.querySelectorAll('.hamburger-bar').forEach(bar => {
+        bar.style.transform = '';
+        bar.style.opacity = '';
+      });
+    }
+  }
+
   if (menuToggle && mobileDrawer) {
     menuToggle.addEventListener('click', () => {
       const isOpen = mobileDrawer.classList.toggle('open');
@@ -246,17 +284,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     mobileNavLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileDrawer.classList.remove('open');
-        menuToggle.classList.remove('active');
-      });
+      link.addEventListener('click', closeDrawer);
+    });
+
+    const mobileDrawerButtons = document.querySelectorAll('.mobile-drawer-btn');
+    mobileDrawerButtons.forEach(btn => {
+      btn.addEventListener('click', closeDrawer);
     });
 
     // Close on outside click
     document.addEventListener('click', (e) => {
       if (!mobileDrawer.contains(e.target) && !menuToggle.contains(e.target)) {
-        mobileDrawer.classList.remove('open');
-        menuToggle.classList.remove('active');
+        closeDrawer();
       }
     });
   }
